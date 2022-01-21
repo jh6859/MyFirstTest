@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8" />
+        <title>모듬샵</title>
+        <style>
+            #wrap {width:800; margin:0 auto; padding:20 20 20 20}
+            header { color:skyblue; font-weight:bold; border:2px solid #cccccc;}
+            header h1:first-letter{font-size:2.5em; color:red;}
+            a:hover{ color:000000; font-weight:bold;}
+            ul li{width:500px; border:2px solid #cccccc; list-style:square;}
+
+            li a::after {
+                content: ' - ' attr(href);
+            }
+            #wrap:not(.na) {background:#cccccc;}
+            li::selection {background-color: red; color:green;}
+            footer {border-bottom:1px solid #000000}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="mod">모듬#</h1>
+                <hr />
+            </header>
+            <nav class="na">
+                <ul>
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                </ul>
+                
+                <hr />
+            </nav>
+            <section>
+                <h2>What is html?</h2>
+                <p>본문 내용들</p>
+                <hr />
+                <ul>
+                    <li><a href="" target="_blank">장난감</a></li>
+                    <li><a href="" target="_blank">사료</a></li>
+                    <li><a href="" target="_blank">위생용품</a></li>
+                    <li><a href="" target="_blank">기타</a></li>
+                </ul>
+            </section>
+
+            <footer>
+                <p>경기도 수원시 권선구 곡반정동</p>
+            </footer>
+        </div> 
+    </body>
+</html>
